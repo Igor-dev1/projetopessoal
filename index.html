@@ -3,12 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boa forma</title>
+    <title>Eletro Easy</title>
+    <link rel="shortcut icon" href="Imagens/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Olá, Mundo</h1>
-    <hr>
-    <p> Estou criando um projeto de produtos de saúde</p>
-    <p> É momento único, obrigado!</p>
+<header>
+    
+    <nav class="menuprincipal"> 
+        <div class="logomenu">
+            <a href="index.html">
+                <img src="Imagens/logo-eletroeasy3.png" alt="Logo Eletro Easy" 
+        width="200px">
+            </a>
+            <div class="menu-texto" >
+                <a class="menu" href="index.html">Home</a>
+                <a class="menu" href="#">Produtos</a>
+                <a class="menu" href="#">Fale Conosco</a>
+            </div>
+        </div>
+
+        <div class="pesquisa">
+            
+            <form action="pesquisa.php"> 
+                <div class="search-box">
+                    <input type="text" name="pesquisa" class="search-txt" id="ipesquisa" placeholder="Busque por produtos..." autocomplete="off">
+                    <a href="#" class="search-button">
+                        <img src="Imagens/lupa.svg" alt="Lupa" height="20" width="20">
+                    </a>               
+                </div>
+
+            </form>
+        </div>
+
+        <div class="account-button">
+            <a href="#" role="button" class="button">
+                <img src="Imagens/user.svg" alt="user" width="20px" height="20px">
+                Minha conta
+            </a>
+        </div>
+        
+
+    </nav>   
+</header>
+
+<main>
+    <section class="divisao">
+        <nav class="categoria-banner">
+            
+            <nav id="categoria">
+                <h2>Categoria</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quo beatae, fugit sequi quasi quos dicta tenetur voluptates commodi iste distinctio enim velit corporis autem optio deserunt magnam nulla. Repellat?
+                    </p>
+            </nav>
+            <nav id="banner">
+                <img src="Imagens/banner-oficial.png" alt="banner-princial">
+            </nav>
+        </nav>
+    </section>
+
+    <section class="painelgeral">
+        <nav class="painel">
+            <nav class="painel2" >
+                <h2>Pagamento rápido e seguro</h2>
+                <h3>com o mercado pago</h3>
+            </nav>
+            <img src="Imagens/credit-card.svg" type="image/svg" alt="Cartão De Crédito" class="imagens-painel1">
+                <nav class="painel3">
+                    <h2>Até 10X sem juros</h2>
+                </nav>
+            </img>
+            <img src="Imagens/pix.svg" type="image/svg" alt="Pix">
+                <nav class="painel4">
+                    <h2>Via Pix</h2>
+                    <h3>aprovação imediata</h3>
+                </nav>
+            </img>
+            <img src="Imagens/carro.svg" alt="carro">
+                <nav class="painelultimo">
+                    <h2>Entrega para Todo Brasil</h2>
+                    <h3>frete grátis</h3>
+                </nav>
+            </img>
+        </nav>
+    </section>
+
+    <section class="divisao" >
+        <h2>Novidades tecnológicas</h2>
+    </section>
+    <section class="divisao" >
+        <h2> Painel sobre beneficios do site(frete gratis etc)</h2>
+    </section>
+
+</main>
+
+    <hr/>
+    
+<footer>
+    &copy;2023 - Todos os direitos reservados.
+</footer>
 </body>
 </html>
