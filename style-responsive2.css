@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+.search-box {
+    width: 100%;
+}
+
+.search-txt{
+    width: 100%;
+}
+
+.account-button{
+    margin-left: 10px;
+}
+
+.painel h2
+{
+    font-size: 17px;
+}
+
+.painel h3{
+    font-size: 14px;
+}
+
+
+

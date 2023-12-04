@@ -6,6 +6,14 @@
     src: url(fontes/botoes.otf) format('truetype');
     
 }
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cairo+Play:wght@200&family=Ibarra+Real+Nova:wght@500&family=PT+Serif&family=Roboto&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
 
 :root{
     --corpagina: #FAB612;
@@ -17,32 +25,76 @@
     --font-seção: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
     --font-texto:'Ibarra Real Nova', serif;
     --fonte-botao:'botoes', serif;
+    --font-principal:'Bungee', sans-serif;
+    --font-resto:'Roboto', sans-serif;
 }
 
-header{
+h1, h2, h3 , h4{
+    font-family: var(--font-principal);
+
+}
+
+p{
+    font-family: var(--font-resto);
+}
+.header{
     margin: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-.menuprincipal{ 
     display: flex;
-    justify-content: center;
     background-color:var(--corpagina);
-    box-shadow: 0px 4px 3px #b4aa3e41;  
+    box-shadow: 0px 4px 3px #b4aa3e41; 
     overflow: hidden;
-    padding: 10px;
+    padding: 20px;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.menu{
+.logo-eletro img {
+    height: auto;
+    display: block;
+}
+
+#burguer{
+    display: none;
+}
+.menuprincipal{ 
+    display: flex; 
+    align-items: center;
+}
+
+
+.menu-texto{
+padding: 0px 0px 0px 15px;
+}
+
+.menu1{
     font-family: 'botoes', serif;
+    text-align: center;
+    margin: auto; 
+    padding: 0px 4px;
+    align-items: center;
+    display: inline-block;  
+}
+
+.menu1 > a{
+    font-family: var(--font-principal); font-weight: bold;
+   
     text-decoration: none;
     color: rgb(0, 0, 0);
     text-align: center;
     margin: auto; 
-    padding: 0px 7px 0px 7px;
+    padding: 0px 4px;
+    align-items: center;
+    display: inline-block;
+}
+
+
+.menu-list {
+    list-style: none; 
+    padding: 0; 
+    display: flex;
 }
 
 .menu:hover {
@@ -60,8 +112,12 @@ header{
     display: flex;
     justify-content: flex-end; 
     align-items: center;
-    padding-left: 10px;
-    
+    padding-left: 10px;   
+}
+
+.search-box:focus-within {
+    border-color: #182C61; 
+    box-shadow: 0 0 5px rgba(24, 44, 97, 0.5); 
 }
 
 .search-box {
@@ -71,6 +127,8 @@ header{
     border-radius: 4px;
     padding: 5px;
     background-color: white; 
+    width: 300px;
+    height: 30px;
 }
 
 
@@ -95,92 +153,142 @@ header{
 }
 
 .account-button{
-    padding: 12px 8px 10px 8px;
-    background-color: white;
-    color: var(--corbotao);
     display: flex;
-    border-radius: 5px;
-    font-family: var(--fonte-botao);
-    align-items: center;
+    padding-top: 3px;
+}
+
+.button img{
+    display: flex;
+    text-align: center;
     align-content: center;
-    margin-left: 8px; 
+    width: 60px;   
+    margin: auto;
+    height: 35px;
 }
 
-.account-button:hover {
-    background-color: var(--corbotao);
-    transition: 0.5s;
-    color: white;
-}
-
-.account-button .button{
-    text-decoration: none;
-    color: var(--fonte-botao);
-}
-
-.button {
-    text-decoration: none;
-    color: var(--corbotao);
+.button img{
     display: flex;
+    text-align: center;
+    align-content: center;
 }
+
+.log-cad{
+    margin: 0px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+#log-cad{
+    margin: 0px;
+    font-size: 1em;
+    font-family: var(--font-seção);
+    color: #525252cc;
+}
+
+.login-cadastro{
+    padding-top: 3px;
+}
+
+.login-cadastro a{
+    text-decoration: none; 
+    color: black;
+}
+
 
 
 .user{
     display: flex;
 }
+
+.buy-cart{
+    display: flex;
+    text-align: center;
+    padding-top: 5px;
+}
+
 .p{
     margin: 0px;
 }
 
 main{
     text-align: center;
+    min-width: 280px;
     max-width: 1100px;
-    width: 100%;
     padding: 10px;
     margin: auto;
 }
 
-#banner img{
-    display: block;
+.divisao{
+    min-width: 350px;
+    max-width: 1100px;
+}
+
+#banner{
+    display: flex;
     margin:0 auto;
     max-width: 100%;
-    width: 790px;
+    width: 70%;
     border-radius: 4px;
     margin-left: 6px;
-    border: 1px solid var(--corborda); 
-    
+    border: 1px solid var(--corborda);   
 }
 
 #categoria{
-    width: 300px;
+    width: 30%;
     border-radius: 4px;
     border: 1px solid var(--corborda); 
+    padding: 10px;
 }
 
 .categoria-banner{
-    display: flex; 
-    box-shadow: ;
+    display: flex;
 }
 
+
 .painelgeral section{
-    display: flex;
-    text-align: center;
-    width: 1100px;
-    margin: auto;
+    
+        display: flex;
+        flex-wrap: nowrap; /* Impede que os itens quebrem para a próxima linha */
+        justify-content: center; /* Centraliza os blocos horizontalmente */
+
+}
+
+.painelgeral{
+    flex-wrap: nowrap;
 }
 
 .painel{
+    width: 100%;
     margin-top: 10px;
     background-color: white;
     border-radius: 4px;
-    display: flex;
     border: 1px solid var(--corborda);
+    padding: 10px;
+    flex-direction: row; 
+    display: flex;
+    justify-content: space-around; /* ou outro valor adequado para o espaçamento desejado */
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+
+.painel2, .painel4 {
+    width: 100%; /* Ajusta a largura do texto para ocupar 100% do contêiner pai */
+}
+
+.painel h2
+{
+    font-size: 20px;
+}
+
+.painel h3{
+    font-size: 17px;
 }
 
 .painel2{
-    border-right: 1px solid var(--corborda);
     margin: auto;
-    padding-right: 30px;
-    padding-left: 27px;
+    width: 25%;
 }
 
 .painel2 h3{
@@ -189,8 +297,8 @@ main{
 }
 
 .painel3{
-    padding-right: 20px;
-    padding-top: 17px;
+    width: 25%;
+    margin: auto;
 }
 
 .imagens-painel1{
@@ -198,8 +306,12 @@ main{
 }
 .painel4{
     margin: auto;
-    padding-right: 10px;
-    padding-right: 20px;
+    width: 25%;
+}
+
+body > main > section.painelgeral > div > div.painel4 > img{
+    width: 40px;
+
 }
 
 .painel4 h3{
@@ -209,12 +321,16 @@ main{
 
 .painelultimo{
     margin: auto;
-    padding-right: 20px;padding-left: 0px;
+    width: 25%;
 }
 
 .painelultimo h3{
     font-family: Arial, Helvetica, sans-serif;
     color: #999999;
+}
+
+.painelultimo h2{
+    word-wrap: break-word
 }
 
 nav > h2 {
@@ -229,10 +345,90 @@ body{
     margin: auto;
 }
 
+.novidades1{
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid var(--corborda);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.feedback1{
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid var(--corborda);
+    padding: 10px;
+    margin-top: 10px;
+}
+
 .divisao{
     background-color: white;
     border-radius: 4px;
 }
+
+
+.subscribe-news {
+    background-color: var(--corpagina);
+    width: 100%;
+    padding: 30px; /* Adicionei algum padding para dar um espaçamento nas bordas */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.subscribeblock1{
+    display: flex;
+    align-items: center;
+}
+
+.subscribeblock2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+body > footer > section > div > div.subscribeblock2 > div.subscribeblock2-2 > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px ;
+}
+
+.subscribeblock2-2{
+    background-color: white;
+    padding: 5px 10px;
+    border: 1px solid var(--corborda);
+    border-radius: 4px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribeblock3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribeblock2-2:hover {
+    background-color: var(--corlogo);
+    cursor: pointer;
+}
+
+
+body > footer > section > div > div.subscribeblock2 > form > div > input[type=email]{
+    margin-bottom: 10px;
+    border: 1px solid var(--corborda);
+    border-radius: 4px;
+    padding: 10px 37px;
+}
+
+.subscribeblock2-2 span {
+    margin-right: 10px;
+    order: -1;
+}
+
 
 footer{
     text-align: center;

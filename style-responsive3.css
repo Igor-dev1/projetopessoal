@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.search-box {
+    width: 100%;
+}
+
+.search-txt{
+    width: 100%;
+}
+
+.menu-list{
+    display: none;
+}
+
+
+menu a{
+    background-color: white;
+    border-top: 2px solid gray;
+}
+
+menu a:hover{
+    background-color: var(--corbotao);
+    color: white;
+}
+
+#burguer{
+    background-color: white;
+    display: block;
+    color: var(--corlogo);
+    padding: 1px;
+    margin-left: 20px;
+}
+
+#burguer:hover{
+    cursor: pointer;
+    background-color: var(--corlogo);
+    color: white;
+
+}
+
+.painel h2
+{
+    font-size: 15px;
+}
+
+.painel h3{
+    font-size: 12px;
+}

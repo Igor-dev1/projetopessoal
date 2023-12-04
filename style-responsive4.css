@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.logo-eletro img {
+    content: url('Imagens/logo-eletroeasy4.png');
+    width: 130px;
+}
+.menuprincipal{
+    position: relative;
+}
+
+
+
+body > header > nav > div.logomenu > div > a > img {
+    position: absolute;
+    top: -62px;
+    left: -41px;
+}
+
+#burguer{
+    position: absolute;
+    top: 23px;
+    left: -28px;
+}
+
+.search-box{
+    position: absolute;
+    top: 21px;
+    left: 30px;
+    width: 80%;
+}
+
+
+body > header > nav > div.buy-cart > a > img{
+    position: absolute;
+    top: 21px;
+    right: -32px;
+}
+
+.account-button{
+    position: relative;
+    top: -20px;
+    right: -18px;
+}
+
+body > header > nav > div.account-button > a > img{
+    width: 29px;
+}
+
+.login-cadastro{
+    position: relative;
+    font-size: 0.9em;
+    top: -19px;
+    left: 29px;
+}
+
+.painelgeral {
+    flex-direction: column;
+}
+
+.painel {
+    flex-direction: column;
+}
+
+.painel h2
+{
+    font-size: 15px;
+}
+
+.painel h3{
+    font-size: 12px;
+}
+
+.painel2, .painel3, .painel4,.painelultimo{
+    padding: 5px 0px;
+    width: 100%;
+}
+

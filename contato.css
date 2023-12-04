@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200&family=Ibarra+Real+Nova:wght@500&family=PT+Serif&display=swap');
+@font-face {
+    font-family: 'botoes';
+    src: url(fontes/botoes.otf) format('truetype');   
+}
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cairo+Play:wght@200&family=Ibarra+Real+Nova:wght@500&family=PT+Serif&family=Roboto&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+:root{
+    --corpagina: #FAB612;
+    --corbotao: #2d2e83;
+    --corlogo: #662483;
+    --corfundo: #f4f4f4;
+    --corborda: #cfcfcf;
+
+    --font-seção: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+    --font-texto:'Ibarra Real Nova', serif;
+    --fonte-botao:'botoes', serif;
+    --font-principal:'Bungee', sans-serif;
+    --font-resto:'Roboto', sans-serif;
+}
+
+main{
+    max-width: 1100px;
+}
+
+
+header{
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #ecf0f1;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img{
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container{
+    display: flex;
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0;
+}
+
+section h2, 
+h3{
+    margin-bottom: 16px;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.store-front{
+    margin-right: 32px;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+
+}
+
+form textarea{
+    resize: none;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: var(--corlogo);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+form button:hover{
+    background-color: var(--corbotao);
+    transition: 0.4s;
+}
+
+input:focus, textarea:focus{
+    outline-color: #182C61;
+}
+
+.contatoblock1{
+    display: flex;
+}
+
+.contato1{
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--corborda); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.callus{
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--corborda); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato1 h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contato1 p {
+    margin-bottom: 8px;
+}
+
+.contato1 button:hover {    
+    background-color: #5BBF5F;
+    transition: 0.4s;
+}
+.contato1 button {
+    background-color: #4da150 ;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;  
+    width: 100%;
+}
+
+.buttonwp{
+    margin: auto;
+    width: 100%;
+}
+
+#contatoid{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+.wpp-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-info {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 10px 0px 10px 5px;
+}
+
+.contact-info1{
+    display: flex;
+}
+
+.contact-info span {
+    margin-right: 10px;
+}
+
+
+
+.adress,
+.adress1{
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--corborda); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    background-color:#182C61;
+    color: #ecf0f1;
+    padding: 16px 0;
+    text-align: center;
+}
