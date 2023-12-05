@@ -13,6 +13,7 @@
     box-sizing: border-box;
     margin:0px;
     padding:0px;
+    font-weight: normal;
 }
 
 :root{
@@ -49,6 +50,7 @@ p{
     padding: 20px;
     margin: auto;
     margin-bottom: 20px;
+    font-weight: normal;
 }
 
 .logo-eletro img {
@@ -80,7 +82,7 @@ padding: 0px 0px 0px 15px;
 
 .menu1 > a{
     font-family: var(--font-principal); font-weight: bold;
-   
+    font-weight: normal;
     text-decoration: none;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -183,6 +185,10 @@ padding: 0px 0px 0px 15px;
     font-size: 1em;
     font-family: var(--font-seção);
     color: #525252cc;
+}
+
+body > header > nav > div.buy-cart > a > img{
+    margin-left: 10px;
 }
 
 .login-cadastro{
@@ -369,22 +375,25 @@ body{
 
 .subscribe-news {
     background-color: var(--corpagina);
-    width: 100%;
-    padding: 30px; /* Adicionei algum padding para dar um espaçamento nas bordas */
+    margin: auto;
+    padding: 13px; /* Adicionei algum padding para dar um espaçamento nas bordas */
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 
 .subscribeblock1{
     display: flex;
     align-items: center;
+    width: 70%;
 }
 
 .subscribeblock2{
     display: flex;
     flex-direction: column;
+    width: 30%;
 }
 
 
@@ -397,7 +406,7 @@ body > footer > section > div > div.subscribeblock2 > div.subscribeblock2-2 > sp
 
 .subscribeblock2-2{
     background-color: white;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border: 1px solid var(--corborda);
     border-radius: 4px;
     display: flex;
@@ -405,6 +414,16 @@ body > footer > section > div > div.subscribeblock2 > div.subscribeblock2-2 > sp
     justify-content: center;
     align-items: center;
 }
+
+.subscribeblock2-1{
+    border-radius: 4px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .subscribeblock3{
     display: flex;
@@ -417,19 +436,29 @@ body > footer > section > div > div.subscribeblock2 > div.subscribeblock2-2 > sp
 }
 
 
-body > footer > section > div > div.subscribeblock2 > form > div > input[type=email]{
-    margin-bottom: 10px;
+body > footer > section > div > div > div.subscribeblock2 > form > div > input[type=email]{
+    margin-bottom: 6px;
     border: 1px solid var(--corborda);
     border-radius: 4px;
-    padding: 10px 37px;
+    padding: 15px 37px;
+    width: 100%;
 }
+
 
 .subscribeblock2-2 span {
     margin-right: 10px;
     order: -1;
 }
 
+.subscribe-content{
+    display: flex;
+    width: 1100px;
+    padding: 8px 0px;
+}
+
 
 footer{
     text-align: center;
+    width: 100%;
+    margin: auto;
 }
